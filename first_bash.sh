@@ -1,3 +1,4 @@
+# This program will ping all possible host connected on the network.
 #!/bin/bash
 if [ "$1" == "" ]
 then
