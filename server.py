@@ -2,7 +2,7 @@
 
 import socket
 
-# we can also use "locahost" below.
+# we can also use "localhost" below.
 HOST = '192.168.1.4'
 # we don't use any of common port that are used by our system
 PORT = 9090
