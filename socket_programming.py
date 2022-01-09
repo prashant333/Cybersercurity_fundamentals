@@ -1,7 +1,7 @@
 # An example script to connect to Google using socket
 # programming in Python
-
-import socket # for socket
+# for socket
+import socket
 import sys
 
 try:
@@ -10,7 +10,7 @@ try:
 	s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 	print("Socket successfully created")
 except socket.error as err:
-	print("socket creation failed with error %s" %(err))
+	print("socket creation failed with error %s" % err)
 
 # default port for socket
 port = 80
