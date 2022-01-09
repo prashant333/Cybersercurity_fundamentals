@@ -9,7 +9,7 @@ PORT = 9090
 
 server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
-server.bind(HOST, PORT)
+server.bind((HOST, PORT))
 
 # server.listen(n) specifies upto how many connection our server will handle before leaving out any new
 # incoming request.
