@@ -18,6 +18,9 @@ port = 80
 try:
 	# host_ip = socket.gethostbyname(socket.gethostname()) --> this command will automatically retrieve the
 	# ip address of the running computer.
+	# do not use above command if there is virtual box installed on the system, since the above command takes
+	# ip address of the VM instead of the system.
+
 	host_ip = socket.gethostbyname('www.google.com')
 except socket.gaierror:
 
