@@ -11,7 +11,7 @@ server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
 server.bind((HOST, PORT))
 
-# server.listen(n) specifies upto how many connection our server will handle before leaving out any new
+# server.listen(n) specifies up to how many connection our server will handle before leaving out any new
 # incoming request.
 server.listen(5)
 
