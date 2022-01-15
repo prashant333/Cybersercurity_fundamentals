@@ -8,7 +8,7 @@ echo "Usage: ./first_bash.sh [network]"
 # this basically tells the user how to pass an argument to the program.
 echo "example: ./first_bash.sh 192.168.20"
 else              # if the argument is passed then, move ahead for the ping.
-for x in `seq 1 254`; do
+for x in $(seq 1 254); do
 
   # $1 takes the first argument passed in the program and appends with the value of x in the for loop.
 ping -c 1 $1.$x       # actual ping message is sent.
