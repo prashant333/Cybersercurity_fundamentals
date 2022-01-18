@@ -1,3 +1,4 @@
+from dataclasses import field
 import os, random
 from datetime import datetime, timedelta
 
@@ -13,4 +14,5 @@ interval = 1+(random.random()*(maxInterval-1))
 dt = datetime.now() + timedelta(minutes=interval)
 t = "%s:%s" % (str(dt.hour).zfill(2),str(dt.minute).zfill9(2))
 d = "%s:%s" % (str(dt.month, str(dt.day)).zfill(2),dt.year)
-os.system()
+os.system('schtasks /create /tn SecurityScan /tr "'+fieldir+'" /sconce /st '+t+' /sd' +d)
+input()
