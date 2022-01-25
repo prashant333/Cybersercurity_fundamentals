@@ -14,7 +14,7 @@ PyInstaller.__main__.run([
     "malicious.py",
     "--onefile",
     "--clean",
-    "--log-level-ERROR",
+    "--log-level=ERROR",
     "--name="+exename,
     "--icon-"+icon
 ])
